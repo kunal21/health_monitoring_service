@@ -12,7 +12,7 @@ This is the frontend for the Aider Health project, built using React.js.
 git clone https://github.com/your-username/aider_health.git
 
 2. Navigate to the frontend folder:
-cd aider_health
+cd aider_health_frontend
 
 3. Install the dependencies:
 npm install
