@@ -50,7 +50,9 @@ def register_patients():
             {"name": "Bob Brown", "age": 45, "physician_id": physicians[1].id},    
             {"name": "Charlie White", "age": 60, "physician_id": physicians[2].id}, 
             {"name": "David Black", "age": 25, "physician_id": physicians[0].id},  
-            {"name": "Eva Blue", "age": 50, "physician_id": physicians[1].id}    
+            {"name": "Eva Blue", "age": 50, "physician_id": physicians[1].id},    
+            {"name": "Frank Yellow", "age": 33, "physician_id": physicians[2].id}, 
+            {"name": "Grace Violet", "age": 29, "physician_id": physicians[0].id}
         ]
 
         for patient_data in patients:

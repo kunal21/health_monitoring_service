@@ -11,11 +11,6 @@ def set_patient_routes(app):
     @app.route('/api/patient-data', methods=['POST'])
     def receive_patient_data():
         try:
-            # Validate session to ensure physician is logged in
-            physician_id = session.get('physician_id')
-            if not physician_id:
-                return jsonify({"error": "Unauthorized"}), 401
-            
             # Parse and validate incoming data
             data = request.get_json()
             if not data or 'patient_id' not in data or 'health_data' not in data:
@@ -33,10 +28,8 @@ def set_patient_routes(app):
             if not patient:
                 return jsonify({"error": "Patient not found"}), 404
             
-            # Ensure the physician is associated with the patient
-            if patient.physician_id != physician_id:
-                return jsonify({"error": "Physician does not have access to this patient"}), 403
-
+            # Patient's physician
+            physician_id = patient.physician_id
             
             out_of_range_metrics = collections.defaultdict(dict)
             for metric_name, value in patient_health_data.items():
