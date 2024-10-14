@@ -1,0 +1,39 @@
+# General ignores for system files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules folder (Frontend)
+aidar_health_frontend/node_modules/
+aidar_health_frontend/build/
+
+# Ignore environment variables
+aidar_health_backend/.env
+aidar_health_frontend/.env
+
+# Ignore log files
+*.log
+
+# Python related ignores (Backend)
+aidar_health_backend/venv/
+aidar_health_backend/__pycache__/
+aidar_health_backend/*.pyc
+aidar_health_backend/*.pyo
+
+# Ignore SQLite database (Backend)
+aidar_health_backend/*.db
+aidar_health_backend/*.sqlite3
+
+# Ignore virtual environment (Backend)
+aidar_health_backend/venv/
+
+# Ignore flask_sessions (Backend)
+aidar_health_backend/flask_session/
+
+# Ignore compiled files
+aidar_health_backend/**/*.pyc
+aidar_health_backend/**/*.pyo
+aidar_health_backend/**/*.pyd
+
+# Ignore IDE specific files (optional, you can include for your editor)
+.vscode/
+.idea/
