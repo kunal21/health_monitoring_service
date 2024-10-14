@@ -44,8 +44,7 @@ To run this backend project locally, follow these steps:
 2. Navigate to the project folder.
 3. Set up a virtual environment (optional but recommended).
 4. Install required dependencies from the `requirements.txt` file.
-5. Configure environment variables in a `.env` file or directly in your shell.
-6. Run the application.
+5. Run the application.
 
 ## API Endpoints
 
@@ -99,12 +98,14 @@ The application uses an SQLite database to store all relevant data. Here is an o
   - `value`: The metric value that triggered the alert.
   - `status`: Whether the value is above or below the threshold.
   - `acknowledged`: Whether the alert has been acknowledged.
+  - `timestamp`: Timestamp of the generated alert.
 
 ## Running the Application
 
 1. Ensure that all dependencies are installed.
 2. To start the backend, run the backend application using the appropriate command.
-3. The backend should now be running on `http://localhost:5000`.
+   `python run.py`
+4. The backend should now be running on `http://localhost:5000`.
 
 ## WebSocket Notifications
 
@@ -115,5 +116,4 @@ The backend uses **Flask-SocketIO** to emit real-time notifications to the front
 - **Session Management**: The application uses Flask-Session for secure, server-side session management.
 - **CORS**: Configured to allow cross-origin requests only from the trusted frontend hosted at `http://localhost:3000`.
 - **Password Hashing**: All physician passwords are stored securely using hashing algorithms.
-- **Environment Variables**: Sensitive data like database URIs or secret keys should be stored as environment variables.
 
