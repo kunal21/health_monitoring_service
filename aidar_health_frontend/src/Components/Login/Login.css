@@ -1,0 +1,13 @@
+.sub-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 5px solid #f3edf0;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.sub-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
