@@ -20,7 +20,7 @@ aidar_health_backend/*.pyc
 aidar_health_backend/*.pyo
 
 # Ignore SQLite database (Backend)
-aidar_health_backend/*.db
+aidar_health_backend/instance/*.db
 aidar_health_backend/*.sqlite3
 
 # Ignore virtual environment (Backend)
