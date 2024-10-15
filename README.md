@@ -34,6 +34,11 @@ The frontend of the application is built with React and manages the UI for setti
 
 This will run the React app locally at `http://localhost:3000`. For more detailed information, refer to the frontend's README inside the `aidar_health_frontend/` folder.
 
+Once you start the backend app, you can login via one of these credentials, which are already registered Physicians for the purpose of this task.
+`1. email="abc@test.com", password="physician1"`
+`2. email="jane.smith@example.com", password="physician2"`
+`3. email="alice.johnson@example.com", password="physician3"`
+
 ## Backend (`aidar_health_backend`)
 
 The backend is a Flask-based API that provides the necessary routes for managing thresholds, alerts, and patients. It also handles WebSocket connections to push real-time alerts to the frontend.
